@@ -344,6 +344,7 @@ s.setPoint(new Point(Integer.parseInt(jTextField1.getText()),Integer.parseInt(jT
 shapes.add(s);
  jTextField9.setText(Square.getCount()+" ");
   jTextField6.setText(Shape.getCount()+" ");
+  Rectangle.setCount(Rectangle.getCount()-1);
 }
 else 
        {
@@ -365,10 +366,10 @@ shapes.add(s);
     public static void main(String args[]) {
        
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new ShapeApp().setVisible(true);
             }
-            
         });
     }
 

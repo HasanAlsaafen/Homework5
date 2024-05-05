@@ -33,10 +33,7 @@ public class Circle extends Shape {
         Circle.count = count;
     }
 
-    @Override
-    public String toString() {
-        return "Circle{" + "radius=" + radius + '}';
-    }
+
 
     @Override
     public double perimeter() {
@@ -53,6 +50,12 @@ public class Circle extends Shape {
         return Math.PI*radius*radius;
         
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" + "radius=" + radius + "center"+this.getPoint().toString()+'}';
+    }
+    
     
     
     

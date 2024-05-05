@@ -44,13 +44,10 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Rectangle{");
-        sb.append("width=").append(width);
-        sb.append(", hieght=").append(hieght);
-        sb.append('}');
-        return sb.toString();
+        return "Rectangle{" + "width=" + width + ", hieght=" + hieght  +" startPoint" +this.getPoint().toString()+ '}';
     }
+
+  
 
     @Override
     public double perimeter() {
